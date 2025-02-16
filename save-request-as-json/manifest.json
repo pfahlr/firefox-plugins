@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Save Request as JSON",
+  "version": "1.0",
+  "description": "Logs top-level request headers and saves as JSON",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "downloads",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
